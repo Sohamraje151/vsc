@@ -1,0 +1,20 @@
+import pandas as pd
+import scipy.stats as s
+score={'English':[73,58,68,32,68,46,67,87,45,98,65,47],'Science':[32,65,98,64,98,45,76,34,64,25,95,45]}
+dframe=pd.DataFrame(score)
+print(dframe)
+print("\n\nArithmetic mean Values in the Distibution")
+print("Score 1",s.tmean(dframe["English"]).round(2))
+print("Score 2",s.tmean(dframe["Science"]).round(2))
+print("\nHarmonic mean Values in the Distibution")
+print("Score 1",s.hmean(dframe["English"]).round(2))
+print("Score 2",s.hmean(dframe["Science"]).round(2))
+print("\nGeometric mean Values in the Distibution")
+print("Score 1",s.gmean(dframe["English"]).round(2))
+print("Score 2",s.gmean(dframe["Science"]).round(2))
+print("\nMedian Values in the Distibution")
+print("Score 1",dframe["English"].median())
+print("Score 2",dframe["Science"].median())
+print("\nMode Values in the Distibution")
+print("Score 1",dframe["English"].mode())
+print("Score 2",dframe["Science"].mode())

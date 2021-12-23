@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        table,td,th{
+            text-align: center;
+            border: 1px solid black;
+            padding: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>List of Books</h2><br>
+    <table>
+        <tr>
+            <th rowspan="2">Item No</th>
+            <th rowspan="2">Item Name</th>
+            <th colspan="2">Price</th>
+                <tr>
+                    <th>Rs.</th>
+                    <th>Paise</th>
+                </tr>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Programming in Python</td>
+                <tr>
+                    <td>500</td>
+                    <td>50</td>
+                </tr>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Programming in Java</td>
+                <tr>
+                    <td>345</td>
+                    <td>00</td>
+                </tr>
+        </tr>
+    </table>
+</body>
+</html>

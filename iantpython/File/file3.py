@@ -1,0 +1,6 @@
+f=open("new.txt","w")
+f.write("the_text_is_written_as_new_text")
+f.close()
+f=open("new.txt","r")
+print(f.read(20))
+f.close()
